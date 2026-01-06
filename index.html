@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handwritten Character Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Handwritten Character Recognition</h1>
+
+    <canvas id="drawCanvas" width="280" height="280"></canvas>
+
+    <div class="buttons">
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="predictCharacter()">Predict</button>
+    </div>
+
+    <div id="output" class="output hidden">
+        <h2>Prediction Result</h2>
+        <p id="character"></p>
+        <p id="confidence"></p>
+
+        <h3>CNN Softmax Output</h3>
+        <p id="probabilities"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
